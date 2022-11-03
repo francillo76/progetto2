@@ -1,0 +1,42 @@
+-----comandi a terminale-------
+Comandi di inizializazione del progetto
+(I file vengono scaricati tramite il gestore di pacchetti Composer)
+Mi posiziono nella cartezza del server web:
+cd /Applications/MAMP/htdocs
+
+Installo il pacchetto con composer
+htdocs% composer create-project laravel/laravel NomeProgetto
+es:
+htdocs% composer create-project laravel/laravel Ecommerce
+
+oppure si può specificare la versione (altrimenti viene prese l'ultima):
+
+htdocs% composer create-project --prefer-dist laravel/laravel:^8.0 Ecommlaravel
+
+--------------------------------------------------------------------------------
+
+cd Ecommerce
+Ecommerce % composer require laravel/breeze --dev
+Ecommerce % php artisan breeze:install
+
+COMANDI A TERMINALE PER CREARE AREA DI AUTENTICAZIONE IN LARAVEL: https://laravel.com/docs/8.x/starter-kits
+-----------------------------------------------------------------------------
+
+Ecommerce % npm install && npm run dev
+
+
+Ecommerce % npm install -g npm    (salto questa riga)
+
+Ecommerce % composer require laravelcollective/html
+
+Installa pacchetti per gestire HTML, riferimento: https://github.com/LaravelCollective/html
+
+-----------------------------------------------------------------------------
+Lancio ambiente di sviluppo (server virtuale che ascolta sulla porta 8000):
+
+Ecommerce % php artisan serve
+
+Apro nel browser: 
+ http://127.0.0.1:8000
+
+Chiudendo il terminale si chiude il server virtuale
